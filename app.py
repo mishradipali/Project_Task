@@ -21,8 +21,8 @@ def get_restaurant_data(city_name):
         return []
 
     soup = BeautifulSoup(response.content, 'html.parser')
-    # restaurant_names = soup.find_all('div', class_='BNeawe vvjwJb AP7Wnd')
-    restaurant_names = soup.find_all('div', class_='OSrXXb')
+    restaurant_names = soup.find_all('div', class_='BNeawe vvjwJb AP7Wnd')
+    #restaurant_names = soup.find_all('div', class_='OSrXXb')
 
     ratings = soup.find_all('span', class_='yi40Hd.YrbPuc')
     reviews = soup.find_all('span', class_='RDApEe.YrbPuc')
